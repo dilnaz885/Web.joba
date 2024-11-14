@@ -3,83 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
+    <title>Ағылшын тілін үйрену</title>
     <style>
+        /* Основные стили для страницы */
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f2f2f2;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
-        .registration-form {
-            background-color: #fff;
+
+        header {
+            background-color: #003366;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
+            text-align: center;
+            color: white;
         }
-        .registration-form h2 {
-            margin-bottom: 20px;
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
             text-align: center;
         }
-        .form-group {
-            margin-bottom: 15px;
+
+        .intro {
+            margin-bottom: 20px;
         }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
+
+        .button {
+            padding: 10px 20px;
+            background-color:  #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
         }
-        .form-group input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+
+        .button:hover {
+            background-color:  #003366;
         }
-        .form-group button {
-            width: 100%;
+
+        .features h3 {
+            margin-top: 30px;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            background: #e0e0e0;
+            margin: 5px 0;
             padding: 10px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
+            border-radius: 5px;
         }
-        .form-group button:hover {
-            background-color: #45a049;
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <!-- Шапка страницы -->
+    <header>
+        <h1>Ағылшын тілін онлайн үйрену</h1>
+        <nav>
+            <a href="courses.html">Курстар</a>
+            <a href="about.html">О платформа</a>
+            <a href="contact.html">Контактілер</a>
+            <a href="login.html">Кіру</a>
+            <a href="register.html">Тіркелу</a>
+        </nav>
+    </header>
 
-<div class="registration-form">
-    <h2>Регистрация</h2>
-    <form action="/register" method="POST">
-        <div class="form-group">
-            <label for="username">Имя пользователя:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Электронная почта:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div class="form-group">
-            <label for="confirm_password">Подтвердите пароль:</label>
-            <input type="password" id="confirm_password" name="confirm_password" required>
-        </div>
-        <div class="form-group">
-            <button type="submit">Зарегистрироваться</button>
-        </div>
-    </form>
-</div>
+ 
+    <main>
+        <section class="intro">
+            <h2>Ағылшын тілін үйрену платформасына қош келдіңіз!</h2>
+            <p>Біздің мақсатымыз - сізге ағылшын тілін нөлден жоғары деңгейге дейін меңгеруге көмектесу. Платформада интерактивті курстар, аудио және бейне материалдар, сондай-ақ білімнің барлық деңгейлеріне арналған практикалық тапсырмалар бар.</p>
+            <a href="courses.html" class="button">Жаттығуды бастаңыз</a>
+        </section>
 
+    
+        <section class="features">
+            <h3>Неліктен біздің платформаны таңдау керек?</h3>
+            <ul>
+                <li>Білімнің барлық деңгейлеріне арналған әртүрлі курстар</li>
+                <li>Интерактивті жаттығудар мен тесттер</li>
+                <li>Тәжірибелі мұғалімдердің пікірі</li>
+                <li>Икемді жаттығу кестесі</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© 2024 Ағылшын тілін онлайн үйреніңіз. Барлық құқықтар қорғалған.</p>
+        <nav>
+            <a href="privacy.html">Құпиялылық саясаты</a> |
+            <a href="terms.html">Қолдану шарттары</a>
+        </nav>
+    </footer>
 </body>
 </html>
